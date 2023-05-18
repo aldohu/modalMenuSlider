@@ -1,0 +1,54 @@
+:root {
+	--modal-duration: 1s;
+	--primary-color: #30336b;
+	--secondary-color: #be2edd;
+	--dark-primary-color: hsl(
+		var(--primary-color-h),
+		var(--primary-color-s),
+		calc(var(--primary-color-l) - 20%)
+	);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 20px;
+}
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	background-color: var(--dark-primary-color);
+	border: none;
+	padding: 10px;
+	padding: 12px 12px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.line {
+	width: 25px;
+	height: 3px;
+	margin-bottom: 4px;
+	background-color: white;
+	color: rgb(255, 255, 255);
+	border: 2px solid white;
+	color: white;
+}
+.menu {
+	display: none;
+}
+.menu.show {
+	display: block;
+}
+header {
+	background-color: var(--primary-color);
+	color: white;
+}
